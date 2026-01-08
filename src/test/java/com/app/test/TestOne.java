@@ -33,7 +33,7 @@ public class TestOne {
 				.when().put("/maps/api/place/update/json")
 				.then().log().all().statusCode(200);
 
-		// get
+		// get method
 		RestAssured.given().log().all().queryParam("key", "qaclick123")
 		.queryParam("place_id", place_id)
 				.header("Content-Type", "application/json")
